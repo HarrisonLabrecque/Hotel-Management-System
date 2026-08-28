@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Hotel Management System",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+
+            "args": [
+                "-fdiagnostics-color=always",
+                "-std=c++17",
+                "-g",
+
+                "-I${workspaceFolder}\\include",
+
+                "${workspaceFolder}\\main.cpp",
+
+                "${workspaceFolder}\\src\\Room.cpp",
+                "${workspaceFolder}\\src\\Guest.cpp",
+                "${workspaceFolder}\\src\\Reservation.cpp",
+                "${workspaceFolder}\\src\\Bill.cpp",
+                "${workspaceFolder}\\src\\Hotel.cpp",
+                "${workspaceFolder}\\src\\FileManager.cpp",
+
+                "-o",
+                "${workspaceFolder}\\HotelManagementSystem.exe"
+            ],
+
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+
+            "problemMatcher": [
+                "$gcc"
+            ],
+
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+
+            "detail": "Build Hotel Management System"
+        }
+    ]
+}

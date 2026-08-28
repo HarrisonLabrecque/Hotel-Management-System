@@ -1,0 +1,23 @@
+# Compiled executable
+*.exe
+
+# Object files
+*.o
+*.obj
+
+# VS Code
+.vscode/*.log
+
+# Debug files
+*.pdb
+
+# Temporary files
+*.tmp
+
+# Build directories
+build/
+bin/
+
+# Windows files
+Thumbs.db
+Desktop.ini
